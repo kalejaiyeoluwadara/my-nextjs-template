@@ -7,6 +7,7 @@ A comprehensive Next.js starter template with Tailwind CSS, pre-built components
 - ⚡️ **Next.js** - The React framework for production
 - 🎨 **Tailwind CSS** - A utility-first CSS framework
 - 📦 **Pre-built UI Components** - Buttons, inputs, form elements, and more
+- 📦 **Shadcn** - Shadcn Installed
 - 🔒 **TypeScript Support** - Type safety and improved developer experience
 - 📱 **Responsive Design** - Mobile-first approach
 - 🧩 **Modular Structure** - Well-organized project architecture
@@ -52,20 +53,6 @@ npm install
     ├── api/                # API routes
     └── ...
 ```
-
-## Available Components
-
-### UI Components
-
-- Button (primary, secondary, outline, ghost)
-- Input (text, number, password)
-- TextArea
-- Checkbox
-- Radio
-- Select
-- Card
-- Modal
-- Tooltip
 
 ## Environment Variables
 
