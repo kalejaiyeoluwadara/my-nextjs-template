@@ -75,11 +75,8 @@ module.exports = {
       colors: {
         primary: {
           50: "#f0f9ff",
-          // Add your color palette
         },
-        // More custom colors
       },
-      // Add custom fonts, spacing, etc.
     },
   },
   // ...
