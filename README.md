@@ -54,6 +54,10 @@ npm install
     └── ...
 ```
 
+## Google Auth
+
+session
+
 ## Environment Variables
 
 Create a `.env.local` file in the root directory:
