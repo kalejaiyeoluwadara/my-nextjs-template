@@ -28,3 +28,24 @@ export async function loginUser(data: { email: string; password: string }) {
     throw error;
   }
 }
+
+
+// Function to fetch user profile
+export function useFetchUserProfile() {
+  /**
+   * @returns the response for the api request
+   */
+  async function fetchUserProfile(accessToken: string) {
+    //Fetch message
+    const response = await API.get(ApiRoutes.FetchUserProfile, {
+      headers: {
+        Authorization: `Bearer ${accessToken}`,
+      },
+    });
+
+    //Return response
+    return response;
+  }
+  //return function to fetch new message
+  return fetchUserProfile;
+}
