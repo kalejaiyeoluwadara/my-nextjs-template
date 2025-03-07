@@ -167,4 +167,52 @@
   body {
     @apply bg-background text-foreground;
   }
+  
+.hideScrollBar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.thinScrollbar::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.hideScrollBar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.hideScrollBar::-webkit-scrollbar-thumb {
+  background-color: #d6d6d6;
+  border-radius: 10px;
+}
+
+/* Thin scrollbar styling for Webkit browsers (Chrome, Edge, Safari) */
+main::-webkit-scrollbar {
+  width: 2px; /* Reduced scrollbar width */
+  height: 4px; /* Reduced scrollbar height for horizontal scrollbars */
+}
+
+main::-webkit-scrollbar-thumb {
+  background: #f1f1f1; /* Scrollbar thumb color */
+  border-radius: 8px; /* Rounded corners for smoother appearance */
+}
+
+main::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Scrollbar track background color */
+  border-radius: 8px;
+}
+
+/* Thin scrollbar styling for Firefox */
+main {
+  scrollbar-width: thin; /* Reduced scrollbar width */
+  scrollbar-color: #f1f1f1; /* Thumb color and track color */
+}
+.mainPage {
+  @apply p-5 relative h-[calc(100vh_-_88px)];
+}
 }
